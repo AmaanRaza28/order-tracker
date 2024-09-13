@@ -21,7 +21,7 @@ export async function fetchOrders({
       sortBy,
     });
 
-    const url = `http://localhost:4000/orders?${params.toString()}`;
+    const url = `https://order-api-delta.vercel.app//orders?${params.toString()}`;
 
     const response = await fetch(url);
     if (!response.ok) {

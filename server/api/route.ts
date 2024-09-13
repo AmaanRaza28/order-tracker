@@ -5,8 +5,6 @@ import { OrdersResponse, ErrorResponse } from "../types/api-types";
 const app = express();
 const prisma = new PrismaClient();
 
-const PORT = process.env.PORT || 3000;
-
 app.get("/", async (req: Request, res: Response) => {
   res.send("Order Status Tracker API");
 });
@@ -70,10 +68,4 @@ app.get(
   }
 );
 
-app
-  .listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  })
-  .on("error", (err) => {
-    console.error(err);
-  });
+export default app;

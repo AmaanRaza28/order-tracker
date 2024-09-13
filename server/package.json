@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node api/index.ts",
     "build": "tsc",
-    "serve": "node src/index.js",
-    "seed": "ts-node prisma/seed.ts"
+    "serve": "node api/index.js",
+    "seed": "ts-node prisma/seed.ts",
+    "postinstall": "prisma generate"
   },
   "author": "",
   "license": "ISC",

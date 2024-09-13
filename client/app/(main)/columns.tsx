@@ -1,7 +1,6 @@
 "use client";
 import { ColumnDef } from "@tanstack/react-table";
 import { Order } from "@/types/api-types";
-import { Avatar } from "@/components/ui/avatar";
 
 export const columns: ColumnDef<Order>[] = [
   {
