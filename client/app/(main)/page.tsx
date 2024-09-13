@@ -20,7 +20,7 @@ export default async function Page({
   return (
     <div className="flex flex-col items-center p-8 gap-4">
       <h1 className="text-4xl font-bold">Track Orders</h1>
-      <div className="w-full flex justify-between">
+      <div className="flex justify-between">
         <Search />
         <div className="flex space-x-2">
           <Sort />

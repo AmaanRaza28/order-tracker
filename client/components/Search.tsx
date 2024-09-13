@@ -22,10 +22,10 @@ function Search() {
   }, 200);
 
   return (
-    <div className="flex items-center border-[1px] rounded-full px-4">
+    <div className="flex items-center border-[1px] rounded-full px-4 mr-3">
       <SearchIcon className="w-5 h-5" />
       <Input
-        className=" focus-visible:ring-0 focus-visible:ring-offset-0 rounded-full border-none w-56 md:w-80"
+        className=" focus-visible:ring-0 focus-visible:ring-offset-0 rounded-full border-none md:w-80"
         onChange={(e) => handleSearch(e.target.value)}
         defaultValue={searchParams.get("search")?.toString()}
         placeholder="Search"
